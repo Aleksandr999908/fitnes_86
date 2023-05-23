@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <title>О себе</title>
+</head>
+<body>
+   <!--header start-->
+   <header class="header">
+		<div class="wrapper__hed">
+		  <div class="header__wrapper">
+			<div class="header__logo">
+				<a href="/" class="header__logo-link">
+					<img src="image/Logo.png" alt="logo" class="header__logo-pic" width="80" >
+				</a>
+			</div>
+			<nav class="header__nav">
+				<ul class="header__list">
+					<li class="header__item button__pop">
+						<a href="./index.html" class="header__link bu__bu">Главная</a>
+					</li>
+					<li class="header__item">
+							<a href="#benefits_full" class="header__link">О себе</a>
+					</li>
+					<li class="header__item">
+							<a href="#places_full" class="header__link"><font color="#FF9400">Выбрать программу</font></a>
+					</li>
+					<li class="header__item">
+						<a href="./marathon.html" class="header__link">Марафон</a>
+					</li>
+				</ul>
+
+			<div class="header__nav-close">
+				<span class="header__nav-close-line"></span>
+				<span class="header__nav-close-line"></span>
+			</div>
+			</nav>
+			<div class="header__burger burger">
+				<span class="burger__line burger__line_first"></span>
+				<span class="burger__line burger__line_second"></span>
+				<span class="burger__line burger__line_third"></span>
+			</div> 
+
+		  </div>
+		</div>
+
+
+
+	 </header> 
+<!--header end-->
+
+<section class="calculate">
+    <div class="wrapper">
+<iframe id="calories_calc_iframe" width="400px" height="300" style="border-radius: 10px; width: 1%; min-width: 400px; vertical-align: top; border:none;" scrolling="no" src="https://calories100.ru/widget/calories_calc?&bg_color=%236d39dc&btn_color=%23f76402&res_bg_color=%23ffffff&pr_bg_color=%23ffffff" referrerpolicy="no-referrer-when-downgrade" frameborder="0"></iframe>
+<div style="margin-top:5px; font-size: 0.9em; color:#999">Калькулятор калорийности предоставлен сайтом <a href="https://calories100.ru" target="_blank">calories100.ru</a></div>
+<script>message={};document.getElementById("calories_calc_iframe").onload = function() {message["url"] = parent.document.URL;document.getElementById("calories_calc_iframe").contentWindow.postMessage(message, "*");};window.addEventListener("message", function(event) {if (height_widget_calories_calc = event.data["height_widget_calories_calc"]) {document.getElementById("calories_calc_iframe").style.height = height_widget_calories_calc + "px"}})</script>
+    </div>
+</section>
+
+   
+
+
+     <!--Footer start-->
+
+	<footer class="footer">
+		<div class="wrapper">
+             <div class="footer__item">
+				<div class="footer__logo">
+					<img src="./image/Logo.png" alt="icon" class="footer__logo-pic" >
+				</div>
+				<nav class="footer__nav">
+                   <ul class="footer__menu">
+					   <li class="footer__menu-item">
+                          <a href="https://www.youtube.com/channel/UCbCzCQKF7kb9G-A6IDY2ixA" class="footer__menu-link">YouTube</a>
+					   </li>
+                   </ul>
+				   <ul class="footer__menu">
+					<li class="footer__menu-item">
+					   <a href="https://www.instagram.com/strong_therock" class="footer__menu-link">Instagram</a>
+					</li>
+				</ul>
+				<ul class="footer__menu">
+					<li class="footer__menu-item">
+					   <a href="https://vk.com/aleksandr999908" class="footer__menu-link">vk.com</a>
+					</li>
+				</ul>
+				</nav>
+
+				
+			 </div>
+		</div>
+    </footer>
+    <script src="./main.js"></script>
+	<!--Footer end-->
+</body>
+</html>
